@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'package:algo_main/auth.dart';
 import 'algolandapp/generatediphone11prox1widget/GeneratedIPhone11ProX1Widget.dart';
 import 'algolandapp/generatediphone11prox2widget/GeneratedIPhone11ProX2Widget.dart';
 import 'algolandapp/generatediphone11prox4widget/GeneratedIPhone11ProX4Widget.dart';
@@ -9,11 +12,28 @@ import 'algolandapp/generatediphone11prox8widget/GeneratedIPhone11ProX8Widget.da
 import 'algolandapp/generatedimage8widget/GeneratedImage8Widget.dart';
 import 'algolandapp/generatedimage9widget/GeneratedImage9Widget.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (Firebase.apps.isEmpty) {
+    await Firebase.initializeApp(
+      name: 'check',
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  }
   runApp(AlgolandApp());
 }
 
 class AlgolandApp extends StatelessWidget {
+  const AlgolandApp({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: AuthGate(),
+    );
+  }
+}
+
+class Start extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

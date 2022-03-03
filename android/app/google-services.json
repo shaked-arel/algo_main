@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "489196915153",
+    "project_id": "algo-3c487",
+    "storage_bucket": "algo-3c487.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489196915153:android:6cd75370c5dd804fad38f0",
+        "android_client_info": {
+          "package_name": "com.example.algo_main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489196915153-pq381ujenpih3m7rk8er1c0jud5d1ab7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNvIL4pmRG2dkvuTWJ4-9jT9N9OO0xc68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489196915153-pq381ujenpih3m7rk8er1c0jud5d1ab7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
